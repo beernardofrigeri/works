@@ -7,40 +7,59 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Bebas+Neue&family=Satisfy&family=Story+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="topnav">
         <div id="logo">
-            <img src="imagens/saocarloslogo.png" alt="Logo" width="100" height="100" style="border-radius: 10px;">
+            <img src="imagens/saocarloslogo.png" alt="Logo" width="70" height="100" style="border-radius: 20px;">
         </div>
         <div id="menu">
             <a href="index.html">Home</a>
             <a2 href="teclados.html">Teclados</a2>
             <a href="mouses.html">Mouses</a>
             <a2 href="microfones.html">Microfones</a2>
+            <a href="saocarloacutis.html">São Carlo Acutis!</a>
         </div>
+    </div>
+    <div id="titulo_principal">
+        <h1 align="center">
+            PROMOÇÕES de 50% OFF!
+        </h1>
     </div>
     <div id="animacao">
         <div id="banner_area">
-            <img src="imagens/aulaf75.webp" id="banner" width="415" height="400"/>
+            <img src="imagens/aulaf75.webp" id="banner" width="515" height="500"/>
             <div id="centraliza">
                 <button onclick="Return()" value="←">←</button>
-                <button onclick="Next()" value="→">→</button>
+                <button2 onclick="Next()" value="→">→</button2>
             </div>
         </div>
     </div>
-    <div id="containerTitulo">
-        <h1></h1>
-    </div>
+        <h2>Sobre Nós!</h2>
     <div id="containerCaixas">
         <div class="caixaesquerda">
-            <h2>Caixa  Esquerda</h2>
-            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Nossa Empresa:</h3>
+            <p>Seja bem vindo à nossa empresa São Carlo Acutis Periféricos! Nós surgimos em 2024, quando o Carlo Acutis se popularizou entre os jovens e o pelo mundo católico! Como ele era da era tech, e jogava video-games, tanto em seu PS1 quanto em seu computador, pensamos em criar um site para vender periféricos inspirado nele! Há várias referências dele ao longo do site, fique alerta! 
+            <br><br><i>Ass: São Carlo Acutis Periféricos Company.</i>
+            </p>
         </div>
         <div class="caixadireita">
-            <h2>Caixa Direita</h2>
-            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Contato: </h3>
+            <p>Para ser atendido, informe-se em nosso sistema: </p>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <email>E-mail:</email><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="text" id="telefone" name="telefone" placeholder="(xx) xxxx-xxxx" required><br><br>
+                <label for="assunto">Assunto:</label><br>
+                <input type="text" id="assunto" name="assunto" required><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
     </div>
     <div id="footer-area">

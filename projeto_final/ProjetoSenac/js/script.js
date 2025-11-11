@@ -1,7 +1,7 @@
 var imagens = [
     "imagens/aulaf75.webp",
-    "imagens/2.jpg",
-    "imagens/3.png",
+    "imagens/g305.webp",
+    "imagens/g733.webp",
 ];
 
 var indice = 0;
