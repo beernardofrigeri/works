@@ -67,39 +67,50 @@ header {
 }
 #animacao {
     width: 100%;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
-#centraliza{
-    width: 980px;
-    height: 20px;
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    margin-top: 400px;
+
+#banner-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 🔹 Centraliza imagem e botões no mesmo eixo */
 }
-#animacao img{
-    border-radius: 15px;
-    margin-top: 10px;
-    align-items: center;
-    margin: auto;
-}
+
 #banner {
     border-radius: 15px;
-    margin: auto;
     display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
- 
-/*efeito de transicao pro o banner */
+
 #banner:hover {
     transform: scale(1.02);
-    transition: 0.3s;
 }
-/* Um efeito sombreado pro banner */
-#animacao img {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+#centraliza {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; /* 🔹 Centraliza horizontalmente os botões */
+    gap: 20px; /* 🔹 Espaçamento igual entre os botões */
+    width: 100%;
+}
+input[type="button"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+input[type="button"]:hover {
+    background-color: red;
 }
 #containerTitulo {
     text-align: center;
@@ -107,19 +118,6 @@ header {
     font-size: 20px;
     font-weight: bold;
     margin-top: 100px;
-}
-input[type="button"] {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-input[type="button"]:hover {
-    background-color: #555;
 }
 #containerCaixas {
     margin: auto;
