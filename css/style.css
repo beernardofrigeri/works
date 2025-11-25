@@ -166,30 +166,133 @@ aside {
     margin: 20px 0;
     padding: 0 5%;
 }
-#banner_area { 
+#banner_area {
     display: flex;
-    flex-direction:column; 
-    align-items:center; 
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* permite que os botões quebrem para baixo */
+    position: relative;
 }
 #banner {
-    width: 515px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    transition: opacity 150ms ease, transform 300ms ease;
-    opacity: 1;
+    flex: 0 0 320px !important;
+    width: 320px !important;
+    height: 320px !important;
+    max-width: 320px !important;
+    object-fit: cover !important;
+    border-radius: 8px;
+    display: block;
+    z-index: 1;
+    margin: 0;
 }
-#banner:hover { 
-    transform: scale(1.01);
+#banner_info {
+    flex: 0 0 320px;
+    max-width: 320px;
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    opacity: 1 !important;
+    transform: none !important;
 }
-#centraliza { 
-    margin-top: 12px; 
-    display:flex; 
-    gap: 16px; 
-    justify-content:center; 
-    width: 100%; 
+#centraliza {
+    order: 99;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+    position: relative;
+    z-index: 3;
 }
+#prevBtn, #nextBtn, #banner_view {
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+}
+#banner_view {
+    background: #0070f3;
+}
+/* responsivo: em telas pequenas empilha e ajusta larguras */
+@media (max-width: 880px) {
+    #banner_area { flex-direction: column; gap: 12px; align-items: center; }
+    #banner { flex-basis: 90% !important; width: 90% !important; height: auto !important; }
+    #banner_info { flex-basis: 90% !important; max-width: 90% !important; }
+    #centraliza { margin-top: 8px; }
+}
+
+/* remove possíveis regras conflitantes antigas (mantém prioridade) */
+#banner_area, #banner, #banner_info, #centraliza, #prevBtn, #nextBtn, #banner_view {
+    all: unset;
+}
+#banner_area { display:flex; align-items:flex-start; gap:20px; justify-content:center; flex-wrap:wrap; position:relative; }
+#banner { box-sizing: border-box; border-radius:8px; object-fit:cover; }
+#banner_info { box-sizing: border-box; padding:14px; background:#fff; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.08); }
+#centraliza { display:flex; justify-content:center; gap:12px; margin-top:12px; }
+#prevBtn, #nextBtn, #banner_view { cursor:pointer; border-radius:8px; padding:8px 14px; color:#fff; }
+
+/* força descrição sempre à direita em telas maiores, responsivo em telas pequenas */
+@media (min-width: 881px) {
+    #banner_area {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: flex-start;
+        gap: 20px;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* banner menor à esquerda */
+    #banner {
+        flex: 0 0 420px !important;
+        max-width: 100%;
+        height: auto !important;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    /* painel de info fixo à direita e sempre visível */
+    #banner_info {
+        flex: 0 0 320px !important;
+        max-width: 100%;
+        opacity: 1 !important;
+        transform: none !important;
+        order: 2;
+    }
+
+    /* centraliza os botões na linha inferior */
+    #centraliza {
+        display: flex !important;
+        order: 99;
+        flex-basis: 100%;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 12px;
+        pointer-events: auto;
+        position: static;
+        inset: auto;
+    }
+
+    /* botões em linha abaixo do banner */
+    #prevBtn,
+    #nextBtn {
+        position: static !important;
+        background: rgba(0,0,0,0.65);
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 18px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+    }
+}
+
 #containerCaixas { 
     max-width: 1200px; 
     margin: 20px auto; 
@@ -292,4 +395,181 @@ aside {
 }
 #button-teclado:hover {
     background-color: blue;
+}
+#iframe {
+    border-radius: 10px;
+    overflow: hidden;
+}
+#banner_info {
+    max-width: 320px;
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    opacity: 0;
+    transition: opacity 180ms ease, transform 180ms ease;
+    transform: translateY(6px);
+}
+#banner_area:hover #banner_info {
+    opacity: 1;
+    transform: translateY(0);
+}
+#banner_info h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+}
+#banner_info p {
+    margin: 6px 0;
+    color: #333;
+}
+#banner_info .nav-btn {
+    margin-top: 8px;
+}
+/* garante posicionamento relativo para o banner e visibilidade dos controles */
+#banner_area {
+    position: relative; /* necessário para posicionamento absoluto dos botões */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* permite reaparecer caso haja regra anterior que esconda #centraliza */
+#centraliza {
+    display: block;            /* sobrescreve possível display: none */
+    position: absolute;
+    inset: 0;                  /* top:0; right:0; bottom:0; left:0; */
+    pointer-events: none;      /* container não captura cliques - apenas os botões */ 
+    z-index: 20;
+}
+
+/* estilo comum dos botões de navegação */
+.nav-btn {
+    pointer-events: auto;      /* ativa cliques nos botões */
+    background: rgba(0,0,0,0.65);
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transition: background 150ms ease, transform 120ms ease;
+}
+
+/* posição sobre o banner, centralizados verticalmente */
+#prevBtn {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 30;
+}
+
+#nextBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 30;
+}
+
+/* Ajuste: botões embaixo do banner (sobrescreve regras antigas) */
+#banner_area {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap; /* permite que #centraliza quebre para baixo */
+    justify-content: center;
+}
+
+/* força #centraliza a aparecer abaixo e centralizar botões */
+#centraliza {
+    display: flex !important;
+    order: 99 !important;
+    flex-basis: 100% !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    margin-top: 12px !important;
+    position: static !important;
+    inset: auto !important;
+    pointer-events: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* botões em linha abaixo do banner */
+#prevBtn,
+#nextBtn {
+    display: inline-flex !important;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    background: rgba(0,0,0,0.65) !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    font-size: 18px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.18) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* ajuste final: centraliza os botões abaixo do banner e reduz espaçamento */
+#centraliza {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    margin-top: 8px !important;
+    flex-basis: 100% !important;
+    order: 99 !important;
+    position: static !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#prevBtn, #nextBtn {
+    padding: 6px 10px !important;
+    font-size: 16px !important;
+    border-radius: 6px !important;
+    background: rgba(0,0,0,0.65) !important;
+    color: #fff !important;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.14) !important;
+}
+
+/* se quiser ícones maiores em telas pequenas */
+@media (max-width: 480px) {
+    #prevBtn, #nextBtn { padding: 8px 12px !important; font-size: 18px !important; }
+}
+
+/* corrige: reduz banner e impede sobreposição dos botões */
+#banner {
+    max-width: 420px !important;
+    width: 100% !important;
+    height: 320px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin-bottom: 8px !important; /* espaço para os botões */
+    z-index: 1 !important;
+}
+
+/* garante que os controles fiquem abaixo e acima do banner no stacking context */
+#centraliza {
+    position: relative !important;
+    z-index: 3 !important;
+    order: 99 !important;
+    flex-basis: 100% !important;
+    justify-content: center !important;
+    margin-top: 10px !important;
+    display: flex !important;
+}
+
+/* assegura alinhamento superior do container para não permitir sobreposição */
+#banner_area {
+    align-items: flex-start !important;
+    padding-bottom: 6px !important;
 }

@@ -32,12 +32,18 @@
         <section id="animacao">
             <aside>
                 <p><i>Teclado Montech Mkey Pro 75</i></p>
-                <img src="imagens/teclado.jpg" id="banner_left" width="240" height="250" alt="Banner Left" style="border-radius: 10px;">
+                <img src="imagens/teclado.jpg" id="banner_left" alt="Banner Left" style="border-radius: 10px; width:240px; height:250px;">
                 <p style="font-size: large;"><i><br><b><code>De R$: 299,00</b> por <em>R$: 149,00</em></code></i></p>
                 <br><button id="button-teclado">Comprar</button>
             </aside>
             <div id="banner_area">
-                <img src="imagens/aulaf75.webp" id="banner" width="515" height="500" alt="Banner">
+                <img id="banner" src="imagens/aulaf75.webp" alt="Banner">
+                <div id="banner_info" aria-live="polite">
+                    <h3 id="banner_title"></h3>
+                    <p id="banner_price"></p>
+                    <p id="banner_desc"></p>
+                    <button id="banner_view" class="nav-btn">Ver mais</button>
+                </div>
                 <div id="centraliza">
                     <button id="prevBtn" type="button" class="nav-btn" aria-label="Anterior">←</button>
                     <button id="nextBtn" type="button" class="nav-btn" aria-label="Próximo">→</button>
