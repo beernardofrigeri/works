@@ -6,8 +6,8 @@ var imagens = [
 var indice = 0;
 var TRANSITION_MS = 150;
 var banner = document.getElementById('banner');
-var prevBtn = document.getElementById('prevBtn');
-var nextBtn = document.getElementById('nextBtn');
+var prevBtn = document.getElementById('button-retorno');
+var nextBtn = document.getElementById('button-avanco');
 if (banner) {
     banner.style.transition = `opacity ${TRANSITION_MS}ms ease`;
     banner.style.opacity = '1';

@@ -10,6 +10,10 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
 }
 button {
     background-color: #a0a0a0;
@@ -21,88 +25,146 @@ button {
     transition: background-color 0.3s ease;
     border: none;
 }
-button:hover {
-    background-color: red;
-}
-h1 {
-    font-size: 25px;
-    background-color: red;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-h2 {
-    font-size: 28px;
-    margin: 16px 0;
-    color: white;
-    background-color: blue;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-input[type="submit"] {
-    background-color: mediumslateblue;
-    color: white;
-    padding: 10px 14px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-input[type="submit"]:hover {
-    background-color: darkblue;
-    transition: background-color 0.3s ease;
-}
-#titulo-principal {
-    align-content: baseline;
-    font-size: 25px;
-    background-color: red;
-    color: white;
-    border-radius: 10px;
-    height: 50px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-#topnav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-}
-#logo img { 
-    border-radius: 8px; 
-}
-#menu {
+nav {
     display: flex;
     gap: 12px;
     align-items: center;
     margin-left: 20px;
 }
-#menu a {
+h1 {
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+h2 {
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+nav a {
     text-decoration: none;
     color: black;
-    font-weight: 700;
-    font-size: 18px;
-    background-color: transparent;
+    font-size: 20px;
     padding: 6px 10px;
     border-radius: 8px;
     transition: color 200ms ease, background-color 200ms ease, transform 120ms ease;
 }
-#menu a:hover {
+nav a:hover {
     color: red;
-    background-color: rgb(140, 140, 245);
-    transform: translateY(-2px);
+    background-color: rgb(255, 223, 15);
 }
-.menu-alt {
-    color: #fff;
-    background: transparent;
-    padding: 6px 10px;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: transparent;
     border-radius: 6px;
-    text-decoration: none;
 }
-.nav-btn {
+#area_principal { 
+    display:flex; 
+    justify-content:center; 
+    margin: 20px 0; 
+}
+aside {
+    background-color: rgb(211, 211, 211);
+    padding: 16px;
+    border-radius: 8px;
+    text-align: left;
+    margin-right: 350px;
+}
+button {
+    background-color: #a0a0a0;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: rgb(255, 223, 15);
+    color: rgba(1, 1, 158, 0.922);
+}
+#button-section1 {
+    background-color: #a0a0a0;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#button-section1:hover {
+    background-color: blue;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#button-section2 {
+    background-color: #a0a0a0;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#button-section2:hover {
+    background-color: rgb(255, 223, 15);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#button-section3 {
+    background-color: #a0a0a0;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#button-section3:hover {
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#button-retorno, #button-avanco {
     background: #a0a0a0;
     color: white;
     border: none;
@@ -112,23 +174,19 @@ input[type="submit"]:hover {
     cursor: pointer;
     transition: transform 120ms ease, background-color 200ms ease, opacity 120ms ease;
 }
-.nav-btn:hover { 
+#button-retorno:hover {
     transform: translateY(-3px); 
-    background-color: #8a8a8a; 
+    background-color: blue; 
+} 
+#button-avanco:hover { 
+    transform: translateY(-3px); 
+    background-color: red; 
 }
-.nav-anim {
-    transform: translateY(-6px) scale(1.05);
-    transition: transform 140ms cubic-bezier(.2,.8,.2,1);
-}
-#animacao { 
-    display:flex; 
-    justify-content:center; 
-    margin: 20px 0; 
-}
-#banner_area { 
+#area_banner { 
     display: flex;
     flex-direction:column; 
-    align-items:center; 
+    align-items:center;
+    margin-right: 630px;
 }
 #banner {
     width: 515px;
@@ -138,30 +196,21 @@ input[type="submit"]:hover {
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     transition: opacity 150ms ease, transform 300ms ease;
     opacity: 1;
-    float: left;
 }
 #banner:hover { 
     transform: scale(1.02);
 }
-#centraliza { 
+#buttons_banner { 
     margin-top: 12px; 
     display:flex; 
     gap: 16px; 
     justify-content:center; 
-    width: 100%; 
 }
-#containerCaixas { 
+#area_segundaria { 
     max-width: 1200px; 
     margin: 20px auto; 
     display:flex; 
     gap:20px;   
-}
-#containerTitulo {
-    text-align: center; 
-    margin-bottom: 20px;
-    background-color: transparent;
-    color: black;
-    padding: 10px 0;
 }
 #caixaesquerda {
     flex:1; 
@@ -203,19 +252,25 @@ input[type="submit"]:hover {
     width: auto;
     background-color: #fff;
 }
-#texto-produto {
-    margin-bottom: 12px;
+p.titulo_produto {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
 }
-.nav-btn-produto {
-    background: #a0a0a0;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 10px;
-    font-size: 16px;
-    transition: transform 120ms ease, background-color 200ms ease, opacity 120ms ease;
-    cursor: pointer;
+p.descricao-produto {
+    font-size: 14px;
+    color: black;
 }
+footer { 
+    margin-top: 30px; 
+    background: #000; 
+    color:#fff; 
+    padding:10px 0; 
+    text-align:center; 
+    max-width: 100%; 
+    margin:0 auto; 
+}
+/* area de formulario css */
 #contato, #localizacao { 
     margin-top: 20px; 
 }
@@ -226,24 +281,18 @@ input[type="submit"]:hover {
     float: right;
     border-radius: 10px;
 }
-#footer-area { 
-    margin-top: 30px; 
-    background: #000; 
-    color:#fff; 
-    padding:10px 0; 
+input[type="submit"] {
+    background-color: mediumslateblue;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
-#footer { 
-    text-align:center; 
-    max-width:980px; 
-    margin:0 auto; 
-    color:#fff; 
+input[type="submit"]:hover {
+    background-color: darkblue;
+    transition: background-color 0.3s ease;
 }
-p.descricao-produto {
-    font-size: 14px;
-    color: rgb(0, 0, 0);
-}
-p.titulo_produto {
-    font-size: 20px;
-    font-weight: bold;
-    color: #000000;
-}
+/* fim da area de formulario */
