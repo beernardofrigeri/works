@@ -11,12 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <article>
-    <header id="topnav">
-        <div id="logo">
-            <img src="imagens/saocarloslogo.png" alt="Logo" width="100" height="100">
-        </div>
-        <nav id="menu">
+    <nav id="menu">
             <ul>
                 <li><a href="teclados.html" class="menu-alt">Teclados</a></li>
                 <li><a href="mouses.html" class="menu-alt">Mouses</a></li>
@@ -37,13 +32,7 @@
                 <br><button id="button-teclado">Comprar</button>
             </aside>
             <div id="banner_area">
-                <img id="banner" src="imagens/aulaf75.webp" alt="Banner">
-                <div id="banner_info" aria-live="polite">
-                    <h3 id="banner_title"></h3>
-                    <p id="banner_price"></p>
-                    <p id="banner_desc"></p>
-                    <button id="banner_view" class="nav-btn">Ver mais</button>
-                </div>
+                <img src="imagens/aulaf75.webp" id="banner" width="515" height="500" alt="Banner">
                 <div id="centraliza">
                     <button id="prevBtn" type="button" class="nav-btn" aria-label="Anterior">←</button>
                     <button id="nextBtn" type="button" class="nav-btn" aria-label="Próximo">→</button>
@@ -59,8 +48,8 @@
                     </div>
                     <p class="titulo_produto">Teclados</p>
                     <p class="descricao-produto">Teclados mecânicos, RGB, e muito mais!</p>
-                    <div>
-                        <button onclick="location.href='teclados.html'">Ver mais!</button>
+                    <div class="nav-btn-produto">
+                        <p onclick="location.href='teclados.html'">Comprar</p>
                     </div>
                 </div>
             </div>
@@ -71,8 +60,8 @@
                     </div>
                     <p class="titulo_produto">Mouses</p>
                     <p class="descricao-produto">Mouses ergonômicos, com alta precisão e design moderno. Perfeitos para gaming!</p>
-                    <div>
-                        <button onclick="location.href='mouses.html'">Ver mais!</button>
+                    <div class="nav-btn-produto">
+                        <p onclick="location.href='mouses.html'">Comprar</p>
                     </div>
                 </div>
             </div>
@@ -83,19 +72,18 @@
                     </div>
                     <p class="titulo_produto">Fones de Ouvido</p>
                     <p class="descricao-produto">Fones de ouvido com cancelamento de ruído e som de alta qualidade.</p>
-                    <div>
-                        <button onclick="location.href='microfones.html'">Ver mais!</button>
+                    <div class="nav-btn-produto">
+                        <p onclick="location.href='microfones.html'">Comprar</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div id="footer-area">
+    <footer id="footer-area">
+        <div id="footer">
             <p>&copy; Desenvolvido por Bernardo Girardi Frigeri - Senac 2025</p>
         </div>
     </footer>
-    </article>
 <script src="js/script.js"></script>
 </body>
 </html>
