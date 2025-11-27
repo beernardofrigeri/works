@@ -258,15 +258,60 @@ footer {
     margin:0 auto; }
 /* fim css index.html */
 /* area de formulario css */
-#contato, #localizacao { 
-    margin-top: 20px; }
-#contato {
-    float: left;}
-#localizacao {
-    float: right;
+#area_principal {
+    max-width: auto; 
+    margin: 20px auto; 
+    gap:20px; 
+    margin-right: 10px;
+    margin-left: 10px;}
+#area_segundaria {
+    max-width: 100%; 
+    margin: 20px auto; 
+    gap:20px; 
+    margin-right: 10px;
+    margin-left: 10px;}
+#area_tercearia {
+    max-width: auto; 
+    margin: 20px auto; 
+    gap:20px; 
+    margin-right: 10px;
+    margin-left: 10px;}
+#caixa_principal_contato {
+    margin-top: 20px;
+    background-color: rgb(236, 236, 236);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(69, 69, 69, 0.5);}
+#caixa_segundaria_contato {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(236, 236, 236);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(69, 69, 69, 0.5);}
+#caixa_segundaria_contato input,
+#caixa_segundaria_contato textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: gold 2px solid;
+}
+#caixa_tercearia_contato {
+    height: auto;
+    margin-top: 20px;
+    background-color: rgb(236, 236, 236);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(69, 69, 69, 0.5);}
+#caixa_tercearia_contato iframe {
+    border-radius: 15px;
+}
+#localizacao iframe {
     border-radius: 10px;}
 input[type="submit"] {
-    background-color: mediumslateblue;
+    background-color: gold;
     color: white;
     padding: 10px 14px;
     border: none;
@@ -275,11 +320,11 @@ input[type="submit"] {
     font-size: 16px;
     transition: background-color 0.3s ease;}
 input[type="submit"]:hover {
-    background-color: darkblue;
+    background-color: goldenrod;
     transition: background-color 0.3s ease;}
 /* fim da area de formulario */
-/* css aulaf75.html */
-#banner_aula {
+/* css produtos */
+#banner_produto {
     width: 515px;
     height: 545px;
     object-fit: cover;
@@ -287,53 +332,53 @@ input[type="submit"]:hover {
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     transition: opacity 150ms ease, transform 300ms ease;
     opacity: 1;}
-.aula-container {
+.produto-container {
     display: flex;
     gap: 18px;
     align-items: flex-start;
     max-width: 1000px;
     margin: 0 auto;}
-.aula-descricao {
+.produto-descricao {
     background-color: white;
     padding: 18px;
     border-radius: 8px;
     margin-right: 15px;}
-.aula-descricao-pro {
+.produto-descricao-pro {
     background-color: white;
     padding: 18px;
     border-radius: 8px;
     margin-right: 15px;}
-.aula-especificacoes {
+.produto-especificacoes {
     background-color: white;
     padding: 18px;
     border-radius: 8px;
     margin-right: 15px;}
-.aula-pagina {
+.produto-pagina {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 18px;
     padding: 0 16px;}
-.aula-imagem {
+.produto-imagem {
     display: flex;
     gap: 18px;
     align-items: flex-start;}
-.aula-side {
+.produto-side {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;}
-.aula-descricao, .aula-descricao-pro {
+.produto-descricao, .produto-descricao-pro {
     background-color: white;
     padding: 16px;
     border-radius: 8px;}
-.aula-especificacoes {
+.produto-especificacoes {
     background-color: white;
     padding: 16px;
     border-radius: 8px;
     width: 100%; }
-h2 .aula-especificacoes{
+h2 #produto{
     background-color: blue;
     color: white;
     font-size: 25px;
@@ -344,4 +389,4 @@ h2 .aula-especificacoes{
 @media (max-width: 900px) {
     .aula-row { flex-direction: column; }
     #banner_aula { width: 100%; height: auto; max-height: 500px; }}
-/* fim css aulaf75.html */
+/* fim css produtos */
