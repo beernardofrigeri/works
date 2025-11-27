@@ -3,8 +3,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     font-family: "Outfit", sans-serif;
-    color: black;
-}
+    color: black;}
 header {
     background-color: transparent;
     color: white;
@@ -13,8 +12,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
-}
+    padding: 10px 20px;}
 button {
     background-color: #a0a0a0;
     color: white;
@@ -23,14 +21,12 @@ button {
     border-radius: 10px;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    border: none;
-}
+    border: none;}
 nav {
     display: flex;
     gap: 12px;
     align-items: center;
-    margin-left: 20px;
-}
+    margin-left: 20px;}
 h1 {
     background-color: red;
     color: white;
@@ -38,8 +34,7 @@ h1 {
     text-align: center;
     border-radius: 15px;
     margin-left: 5px;
-    margin-right: 5px;
-}
+    margin-right: 5px;}
 h2 {
     background-color: blue;
     color: white;
@@ -47,49 +42,42 @@ h2 {
     text-align: center;
     border-radius: 15px;
     margin-left: 5px;
-    margin-right: 5px;
-}
+    margin-right: 5px;}
 nav a {
     text-decoration: none;
     color: black;
     font-size: 20px;
     padding: 6px 10px;
     border-radius: 8px;
-    transition: color 200ms ease, background-color 200ms ease, transform 120ms ease;
-}
+    transition: color 200ms ease, background-color 200ms ease, transform 120ms ease;}
 nav a:hover {
     color: red;
-    background-color: rgb(255, 223, 15);
-}
+    background-color: rgb(255, 223, 15);}
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 12px;
-}
+    gap: 12px;}
 nav ul li {
-    position: relative;
-}
+    position: relative;}
 nav ul li ul {
     display: none;
     position: absolute;
     top: 100%;
     background-color: transparent;
-    border-radius: 6px;
-}
+    border-radius: 6px;}
 #area_principal { 
     display:flex; 
     justify-content:center; 
-    margin: 20px 0; 
-}
+    margin: 20pt 0; 
+    gap:20px; }
 aside {
     background-color: rgb(211, 211, 211);
     padding: 16px;
     border-radius: 8px;
     text-align: left;
-    margin-right: 350px;
-}
+    margin-left: 10px;}
 button {
     background-color: #a0a0a0;
     color: white;
@@ -98,12 +86,10 @@ button {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 button:hover {
     background-color: rgb(255, 223, 15);
-    color: rgba(1, 1, 158, 0.922);
-}
+    color: rgba(1, 1, 158, 0.922);}
 #button-section1 {
     background-color: #a0a0a0;
     color: white;
@@ -112,8 +98,7 @@ button:hover {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 #button-section1:hover {
     background-color: blue;
     color: white;
@@ -122,8 +107,7 @@ button:hover {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 #button-section2 {
     background-color: #a0a0a0;
     color: white;
@@ -132,8 +116,7 @@ button:hover {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 #button-section2:hover {
     background-color: rgb(255, 223, 15);
     color: white;
@@ -142,8 +125,7 @@ button:hover {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 #button-section3 {
     background-color: #a0a0a0;
     color: white;
@@ -152,8 +134,7 @@ button:hover {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 #button-section3:hover {
     background-color: red;
     color: white;
@@ -162,8 +143,7 @@ button:hover {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 #button-retorno, #button-avanco {
     background: #a0a0a0;
     color: white;
@@ -172,22 +152,19 @@ button:hover {
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
-    transition: transform 120ms ease, background-color 200ms ease, opacity 120ms ease;
-}
+    transition: transform 120ms ease, background-color 200ms ease, opacity 120ms ease;}
 #button-retorno:hover {
     transform: translateY(-3px); 
-    background-color: blue; 
-} 
+    background-color: blue; } 
 #button-avanco:hover { 
     transform: translateY(-3px); 
-    background-color: red; 
-}
+    background-color: red; }
 #area_banner { 
     display: flex;
     flex-direction:column; 
     align-items:center;
-    margin-right: 630px;
-}
+    flex: 1 1 0;
+    margin-left: -310px;}
 #banner {
     width: 515px;
     height: 500px;
@@ -195,44 +172,37 @@ button:hover {
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     transition: opacity 150ms ease, transform 300ms ease;
-    opacity: 1;
-}
+    opacity: 1;}
 #banner:hover { 
-    transform: scale(1.02);
-}
+    transform: scale(1.02);}
 #buttons_banner { 
     margin-top: 12px; 
     display:flex; 
     gap: 16px; 
-    justify-content:center; 
-}
+    justify-content:center; }
 #area_segundaria { 
     max-width: 1200px; 
     margin: 20px auto; 
     display:flex; 
-    gap:20px;   
-}
+    gap:20px;   }
 #caixaesquerda {
     flex:1; 
     background:#fff; 
     padding:16px; 
     border-radius:8px;
-    height: 400px;
-}
+    height: 400px;}
 #caixacentral {
     flex:1; 
     background:#fff; 
     padding:16px; 
     border-radius:8px;
-    height: 400px;
-}
+    height: 400px;}
 #caixadireita { 
     flex:1; 
     background:#fff; 
     padding:16px; 
     border-radius:8px;
-    height: 400px;
-}
+    height: 400px;}
 .imagem-produto {
     width: 100%; 
     height: 200px; 
@@ -243,24 +213,20 @@ button:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    align-items: center;}
 .produtos {
     margin-bottom: 20px;
     text-align: center;
     height: auto;
     width: auto;
-    background-color: #fff;
-}
+    background-color: #fff;}
 p.titulo_produto {
     font-size: 20px;
     font-weight: bold;
-    color: black;
-}
+    color: black;}
 p.descricao-produto {
     font-size: 14px;
-    color: black;
-}
+    color: black;}
 footer { 
     margin-top: 30px; 
     background: #000; 
@@ -268,19 +234,15 @@ footer {
     padding:10px 0; 
     text-align:center; 
     max-width: 100%; 
-    margin:0 auto; 
-}
+    margin:0 auto; }
 /* area de formulario css */
 #contato, #localizacao { 
-    margin-top: 20px; 
-}
+    margin-top: 20px; }
 #contato {
-    float: left;
-}
+    float: left;}
 #localizacao {
     float: right;
-    border-radius: 10px;
-}
+    border-radius: 10px;}
 input[type="submit"] {
     background-color: mediumslateblue;
     color: white;
@@ -289,10 +251,8 @@ input[type="submit"] {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 input[type="submit"]:hover {
     background-color: darkblue;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 /* fim da area de formulario */
