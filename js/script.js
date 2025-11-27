@@ -3,15 +3,30 @@ var imagens = [
     "imagens/g305.webp",
     "imagens/g733.webp"
 ];
+var descricoes = [
+    { title: "Teclado Aula F75", text: "Teclado mecânico compacto, switches hot-swap e iluminação RGB. Perfeito para produtividade e jogos.", price: "R$ 249,00" },
+    { title: "Mouse Logitech G305", text: "Mouse sem fio leve com sensor HERO e alta precisão — ótimo para gamers que buscam performance.", price: "R$ 199,00" },
+    { title: "Headset Logitech G733", text: "Fone sem fio com iluminação RGB, excelente conforto e som imersivo.", price: "R$ 449,00" }
+];
 var indice = 0;
 var TRANSITION_MS = 150;
 var banner = document.getElementById('banner');
 var prevBtn = document.getElementById('button-retorno');
 var nextBtn = document.getElementById('button-avanco');
+var bannerTitle = document.getElementById('banner-title');
+var bannerText = document.getElementById('banner-text');
+var bannerPrice = document.getElementById('banner-price');
 if (banner) {
     banner.style.transition = `opacity ${TRANSITION_MS}ms ease`;
     banner.style.opacity = '1';
 }
+// inicializa descrição junto com a imagem atual
+function atualizarDescricao() {
+    if (bannerTitle) bannerTitle.textContent = descricoes[indice].title || "";
+    if (bannerText) bannerText.textContent = descricoes[indice].text || "";
+    if (bannerPrice) bannerPrice.textContent = descricoes[indice].price || "";
+}
+atualizarDescricao();
 var isSwitching = false;
 function animateButton(btn) {
     if (!btn) return;
@@ -32,6 +47,8 @@ function mostrarImagem() {
         banner.removeEventListener('transitionend', onTransitionEnd);
         banner._onFade = null;
         banner.src = proxima;
+        // atualiza a descrição quando a imagem for trocada
+        atualizarDescricao();
         requestAnimationFrame(() => requestAnimationFrame(() => banner.style.opacity = '1'));
     };
     banner._onFade = onTransitionEnd;
@@ -52,6 +69,9 @@ function prevImage() {
     animateButton(prevBtn);
     indice = (indice - 1 + imagens.length) % imagens.length;
     mostrarImagem();
+}
+function adicionar_carrinho() {
+    alert("Produto adicionado ao carrinho!");
 }
 if (nextBtn) nextBtn.addEventListener('click', nextImage);
 if (prevBtn) prevBtn.addEventListener('click', prevImage);

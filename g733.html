@@ -1,1 +1,106 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SCA Periféricos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="imagens/saocarloslogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagens/saocarloslogo.png" alt="Logo" width="100" height="100">
+        </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="menu-alt">Início</a></li>
+            <li><a href="teclados.html" class="menu-alt">Teclados</a></li>
+            <li><a href="mouses.html" class="menu-alt">Mouses</a></li>
+            <li><a href="microfones.html" class="menu-alt">Fones de Ouvido</a></li>
+            <li><a href="contato.html" class="menu-alt">Contato e Localização</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <h1>Teclado mecânico AULA F75!</h1>
+        <section class="aula-pagina">
+            <div class="aula-imagem">
+                <img src="imagens/aulaf75.webp" id="banner_aula" width="515" height="500" alt="Banner" style="float: left;">
+            <div class="aula-side">
+                <div class="aula-descricao">
+                    <h3>Teclado Aula F75</h3>
+                    <p>Teclado mecânico compacto, switches hot-swap, iluminação RGB e construção robusta — ideal para produtividade e jogos.</p>
+                    <p><strong>R$ 249,00</strong></p>
+                    <button onclick="adicionar_carrinho()" id="button-section1"><i>Adicionar ao carrinho</i></button>
+                </div>
+                <div class="aula-descricao-pro">
+                    <h3>Teclado Aula F75 Pro</h3>
+                    <p>Teclado mecânico compacto, switches hot-swap, iluminação RGB e construção robusta — ideal para produtividade e jogos. A versão Pro oferece ainda mais recursos e personalizações. Como uma tela interativa para editar como quiser e mais qualidade de construção e sustentabilidade.</p>
+                    <p><strong>R$ 899,00</strong></p>
+                    <button onclick="adicionar_carrinho()" id="button-section1"><i>Adicionar ao carrinho</i></button>
+                </div>
+            </div>
+        </div>
+        <div class="aula-descricao">
+                <h3>Visão Geral</h3>
+                <p>O Teclado Aula F75 é um teclado mecânico compacto projetado para oferecer uma experiência de digitação confortável e eficiente. Com switches hot-swap, você pode personalizar facilmente seu teclado trocando as teclas conforme sua preferência. A iluminação RGB personalizável permite que você ajuste as cores e efeitos de luz para combinar com seu estilo.</p>
+            </div>
+            <div class="aula-especificacoes">
+                <h4>Especificações Técnicas:</h4>
+                    <ul>
+                        <li>Switches: Hot-Swap</li>
+                        <li>Iluminação: RGB Personalizável</li>
+                        <li>Construção: Plástico ABS de Alta Qualidade</li>
+                        <li>Conectividade: USB-C</li>
+                        <li>Compatibilidade: Windows, MacOS, Linux</li>
+                        <li>Dimensões: 32.5cm x 12.5cm x 4cm</li>
+                        <li>Peso: 800g</li>
+                        <li>Na versão Pro: Tela interativa</li>
+                        <li>Cores: Azul, Azul Marinho, Branco, Cedar Green, Glacial Blue, Preto.</li>
+                    </ul>
+            </div>
+        </section>
+        <h2 id="aulaf75">Outros dos nossos produtos: </h2>
+        <section id="area_segundaria">
+            <div id="caixaesquerda">
+                <div class="produtos">
+                    <div class="imagem-produto">
+                        <img src="imagens/teclado.jpg" alt="Produto 1" width="200" height="200">
+                    </div>
+                    <p class="titulo_produto">Teclados</p>
+                    <p class="descricao-produto">Teclados mecânicos, RGB, e muito mais!</p>
+                        <button onclick="location.href='teclados.html'" id="button-section1"><i>Ver Mais</i></button>
+                </div>
+            </div>
+            <div id="caixacentral">
+                <div class="produtos">
+                    <div class="imagem-produto">
+                        <img src="imagens/mouse.png" alt="Produto 2" width="200" height="200">
+                    </div>
+                    <p class="titulo_produto">Mouses</p>
+                    <p class="descricao-produto">Mouses ergonômicos, com alta precisão e design moderno. Perfeitos para gaming!</p>
+                        <button onclick="location.href='mouses.html'" id="button-section2"><i>Ver Mais</i></button>
+                </div>
+            </div>
+            <div id="caixadireita">
+                <div class="produtos">
+                    <div class="imagem-produto">
+                        <img src="imagens/fone.jpg" alt="Produto 3" width="200" height="200">
+                    </div>
+                    <p class="titulo_produto">Fones de Ouvido</p>
+                    <p class="descricao-produto">Fones de ouvido com cancelamento de ruído e som de alta qualidade.</p>
+                        <button onclick="location.href='microfones.html'" id="button-section3"><i>Ver Mais</i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <p>&copy; Desenvolvido por Bernardo Girardi Frigeri - Senac 2025</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
