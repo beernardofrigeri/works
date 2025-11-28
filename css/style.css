@@ -390,3 +390,10 @@ h2 #produto{
     .aula-row { flex-direction: column; }
     #banner_aula { width: 100%; height: auto; max-height: 500px; }}
 /* fim css produtos */
+/* css teclados.html, mouses.html, fones.html */
+#caixa_esquerda, #caixa_central_1, #caixa_central_2, #caixa_direita {
+    flex:1; 
+    background:#fff; 
+    padding:16px; 
+    border-radius:8px;
+    height: 500px;}
