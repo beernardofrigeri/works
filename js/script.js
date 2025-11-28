@@ -8,6 +8,11 @@ var descricoes = [
     { title: "Mouse Logitech G305", text: "Mouse sem fio leve com sensor HERO e alta precisão — ótimo para gamers que buscam performance.", price: "R$ 199,00" },
     { title: "Headset Logitech G733", text: "Fone sem fio com iluminação RGB, excelente conforto e som imersivo.", price: "R$ 449,00" }
 ];
+var links = [
+    "aulaf75.html",
+    "g305.html",
+    "g733.html"
+];
 var indice = 0;
 var TRANSITION_MS = 150;
 var banner = document.getElementById('banner');
@@ -26,6 +31,12 @@ function atualizarDescricao() {
     if (bannerText) bannerText.textContent = descricoes[indice].text || "";
     if (bannerPrice) bannerPrice.textContent = descricoes[indice].price || "";
 }
+var botaoMore = document.getElementById('banner-more');
+    if (botaoMore) {
+        botaoMore.onclick = function() {
+            location.href = links[indice];
+        };
+    }
 atualizarDescricao();
 var isSwitching = false;
 function animateButton(btn) {

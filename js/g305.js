@@ -1,9 +1,9 @@
 var imagens = [
-    "imagens/aulaf75.webp",
-    "imagens/aulaf75_glacial.webp",
-    "imagens/aulaf75_cedar_green.webp",
-    "imagens/aulaf75_preto.webp",
-    "imagens/aulaf75_pro.webp"
+    "imagens/g305.webp",
+    "imagens/g305_preto.png",
+    "imagens/g305_branco.webp",
+    "imagens/g305_menta.webp",
+    "imagens/g305_lilas.png"
 ];
 var indice = 0;
 var TRANSITION_MS = 150;
