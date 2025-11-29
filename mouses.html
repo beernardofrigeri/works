@@ -18,7 +18,7 @@
     <nav>
         <ul>
             <li><a href="index.html" class="menu-alt">Início</a></li>
-            <li><a href="teclados.html" class="menu-alt">Teclados</a></li>
+            <li><a href="mouses.html" class="menu-alt">Mouses</a></li>
             <li><a href="fones.html" class="menu-alt">Fones de Ouvido</a></li>
             <li><a href="contato.html" class="menu-alt">Contato e Localização</a></li>
         </ul>
@@ -27,26 +27,81 @@
     <main>
         <h1>Mouses: </h1>
         <section id="area_principal">
-            <aside>
-                <p><i>Teclado Montech Mkey Pro 75</i></p>
-                    <img src="imagens/teclado.jpg" id="banner_left" alt="Banner Left" style="border-radius: 10px; width:240px; height:250px;">
-                <p style="font-size: large;"><i><br><b><code>De R$: 299,00</b> por <em>R$: 149,00</em></code></i></p>
-                <br>
-                <button><i>Mais informações</i></button>
-            </aside>
-            <div id="area_banner">
-                <img src="imagens/aulaf75.webp" id="banner" width="515" height="500" alt="Banner">
-                <div id="buttons_banner">
-                    <button id="button-retorno" type="button" aria-label="Anterior">←</button>
-                    <button id="button-avanco" type="button" aria-label="Próximo">→</button>
+            <div id="caixa_esquerda">
+                <h3>Mouse Logitech G305: </h3>
+                <div id="img">
+                    <img src="imagens/g305.webp" alt="Mouse Logitech G305" width="200" height="200">
                 </div>
+                <p>Mouse sem fio com sensor HERO, iluminação RGB e design ergonômico — ideal para jogos e uso diário.</p>
+                <small style="color: red;"><i>50% OFF!</i></small><br>
+                <p id="banner-price"><strong>R$: 199,00</strong></p>
+                <button onclick="location.href='g305.html'" id="button-section1"><i>Mais informações</i></button>
             </div>
-            <aside id="banner_desc" aria-live="polite">
-                <h3 id="banner-title">Teclado Aula F75</h3>
-                <p id="banner-text">Teclado mecânico compacto, switches hot-swap, iluminação RGB e construção robusta — ideal para produtividade e jogos.</p>
-                <p id="banner-price"><strong>R$ 249,00</strong></p>
-                <button id="banner-more" type="button" onclick="location.href='aulaf75.html'">Mais informações</button>
-            </aside>
+            <div id="caixa_central_1">
+                <h3>Mouse Razer DeathAdder V2: </h3>
+                <div id="img">
+                    <img src="imagens/deathadder_v2.webp" alt="Mouse Razer DeathAdder V2" width="200" height="200">
+                </div>
+                <p>Mouse ergonômico com sensor óptico de alta precisão, iluminação RGB e design confortável — ideal para longas sessões de jogos.</p>
+                <p id="banner-price">R$: 199,00</p>
+                <button onclick="location.href='deathadder_v2.html'" id="button-section1"><i>Mais informações</i></button>
+            </div>
+            <div id="caixa_central_2">
+                <h3>Teclado Machenike K500-B61 Mini: </h3>
+                <div id="img">
+                    <img src="imagens/machenike_k500.jpg" alt="Teclado 3" width="200" height="200">
+                </div>
+                <p>Teclado mecânico compacto (formato 60%), com switches hot-swap, retroiluminação RGB personalizável, construção robusta sobre base metálica e conexão via USB-C — ideal tanto para programação, digitação quanto pra jogos.</p>
+                <p id="banner-price">R$: 259,00</p>
+                <button onclick="location.href='k500-b61.html'" id="button-section1"><i>Mais informações</i></button>
+            </div>
+            <div id="caixa_direita">
+                <h3> Teclado SuperFrame Player RGB 60%: </h3>
+                <div id="img">
+                    <img src="imagens/superframe.jpg" alt="Teclado 4" width="200" height="200">
+                </div>
+                <p>Teclado mecânico ultracompacto (60 %), com switches lineares Red, iluminação RGB, keycaps duráveis e cabo destacável — ideal para quem quer um setup compacto e ágil para digitar, programar ou jogar.</p>
+                <p id="banner-price">R$: 189,00</p>
+                <button onclick="location.href='superframe.html'" id="button-section1"><i>Mais informações</i></button>
+            </div>
+        </section>
+        <section id="area_principal_2">
+            <div id="caixa_esquerda">
+                <h3>Teclado Corsair K70 Core: </h3>
+                <div id="img">
+                    <img src="imagens/k70_corsair.webp" alt="Teclado" width="200" height="200">
+                </div>
+                <p>Teclado mecânico full-size, switches lineares suaves, iluminação RGB e construção robusta com placa de alumínio — ótimo para jogos e produtividade com conforto e precisão.</p>
+                <p id="banner-price">R$: 549,00</p>
+                <button onclick="location.href='k70_core.html'" id="button-section1"><i>Mais informações</i></button>
+            </div>
+            <div id="caixa_central_1">
+                <h3>Teclado Redragon Dark Avenger K568R: </h3>
+                <div id="img">
+                    <img src="imagens/k568r_redragon.jpg" alt="Teclado 2" width="200" height="190">
+                </div>
+                <p>Teclado mecânico acessível com iluminação RGB, layout funcional e construção simples — boa opção custo-benefício para quem quer começar no mundo dos mecânicos.</p>
+                <p id="banner-price">R$: 199,00</p>
+                <button onclick="location.href='k568r_redragon.html'" id="button-section1"><i>Mais informações</i></button>
+            </div>
+            <div id="caixa_central_2">
+                <h3>Teclado Womier S-K80: </h3>
+                <div id="img">
+                    <img src="imagens/s-k80_womier.jpg" alt="Teclado 3" width="200" height="200">
+                </div>
+                <p>Teclado mecânico compacto (75 %), geralmente hot-swap e com iluminação RGB — ideal para quem quer um setup menor, prático e versátil.</p>
+                <p id="banner-price">R$: 459,00</p> 
+                <button onclick="location.href='s-k80_womier.html'" id="button-section1"><i>Mais informações</i></button>
+            </div>
+            <div id="caixa_direita">
+                <h3>Teclado Keychron V3 QMK: </h3>
+                <div id="img">
+                    <img src="imagens/v3_keychron.webp" alt="Teclado 4" width="200" height="200">
+                </div>
+                <p>Teclado mecânico customizável, focado em modularidade e conforto — ótimo se você gosta de personalizar switches/teclas e prioriza digitação prolongada e uso constante.</p>
+                <p id="banner-price">R$: 699,00</p>
+                <button onclick="location.href='v3_keychron.html'" id="button-section1"><i>Mais informações</i></button>
+            </div>
         </section>
         <h2>Nossos produtos!</h2>
         <section id="area_segundaria">
@@ -57,6 +112,7 @@
                     </div>
                     <p class="titulo_produto">Teclados</p>
                     <p class="descricao-produto">Teclados mecânicos, RGB, e muito mais!</p>
+                    <small style="color: red;"><i>Você está aqui.</i></small><br><br>
                         <button onclick="location.href='teclados.html'" id="button-section1"><i>Ver Mais</i></button>
                 </div>
             </div>
@@ -67,7 +123,6 @@
                     </div>
                     <p class="titulo_produto">Mouses</p>
                     <p class="descricao-produto">Mouses ergonômicos, com alta precisão e design moderno. Perfeitos para gaming!</p>
-                    <small style="color: blue;"><i>Você está aqui.</i></small><br><br>
                         <button onclick="location.href='mouses.html'" id="button-section2"><i>Ver Mais</i></button>
                 </div>
             </div>
