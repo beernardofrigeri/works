@@ -296,8 +296,7 @@ footer {
     padding: 10px;
     font-size: 16px;
     border-radius: 10px;
-    border: gold 2px solid;
-}
+    border: gold 2px solid;}
 #caixa_tercearia_contato {
     height: auto;
     margin-top: 20px;
@@ -306,8 +305,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(69, 69, 69, 0.5);}
 #caixa_tercearia_contato iframe {
-    border-radius: 15px;
-}
+    border-radius: 15px;}
 #localizacao iframe {
     border-radius: 10px;}
 input[type="submit"] {
@@ -396,4 +394,12 @@ h2 #produto{
     background:#fff; 
     padding:16px; 
     border-radius:8px;
-    height: 500px;}
+    height: 550px;}
+#area_principal_2 {
+    display:flex; 
+    justify-content:center; 
+    margin: 20pt 0; 
+    gap:20px;
+    align-items:flex-start;
+    margin-left: 10px;
+    margin-right: 10px;}
