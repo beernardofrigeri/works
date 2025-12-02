@@ -95,7 +95,7 @@ button {
     transition: background-color 0.3s ease;}
 button:hover {
     background-color: rgb(255, 223, 15);
-    color: rgba(1, 1, 158, 0.922);}
+    color: rgba(255, 0, 0, 0.922);}
 #button-section1 {
     background-color: #a0a0a0;
     color: white;
